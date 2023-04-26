@@ -2,18 +2,6 @@
 
 @charset "UTF-8";
 
-/*
-::-moz-selection { // Code for Firefox
-   color: white;
-   background: blue;
- }
-
- ::selection {
-   color: white;
-   background: blue;
- }
- */
-
 * {
   padding: 0px;
   margin: 0px;
@@ -123,13 +111,6 @@ select:focus {
   min-width: 0;
 }
 
-/*
-(i) Стилі будуть застосовуватись до
-всіх класів, що містять *__container
-Наприклад header__container, main__container і т.п.
-Сніппет (HTML): cnt
-*/
-
 [class*=__container] {
   max-width: 91.875rem;
   margin: 0 auto;
@@ -184,29 +165,6 @@ select:focus {
     left: 0;
   }
 }
-
-/*
-@keyframes circle-menu {
-   0% {
-      border-radius: 50%;
-   }
-   20% {
-      border-radius: 48% 52% 57% 43% / 36% 73% 27% 64%  ;
-   }
-   40% {
-      border-radius: 52% 48% 57% 43% / 56% 40% 60% 44%  ;
-   }
-   60% {
-      border-radius: 52% 48% 57% 43% / 65% 73% 27% 35%  ;
-   }
-   80% {
-      border-radius: 42% 58% 70% 30% / 30% 45% 55% 70%;
-   }
-   100% {
-      border-radius: 50% ;
-   }
-}
- */
 
 .header {
   position: fixed;
@@ -268,123 +226,6 @@ select:focus {
 .icon-menu {
   display: none;
 }
-
-/*
-.circle-menu {
-   background-color: #98ff98;
-   padding: 20px 15px;
-   border-radius: 50%;
-   animation: circle-menu 6s infinite linear;
-   position: absolute;
-   // .circle-menu__menu
-   &__menu {
-   }
-   &__item {
-   }
-   // .circle-menu__list
-   &__list {
-   }
-   // .circle-menu__link
-   &__link {
-      top: 28px;
-      left: -75px;
-      transform: rotate(0deg) translate(85px, -20px);
-      transform-origin: 100px;
-      position: absolute;
-      z-index: -1;
-      transition: all 0.5s ease 0s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      color: #000;
-      background: #fff;
-      border-radius: 50%;
-      // .circle-menu__link_1
-      &_1 {
-      }
-      // .circle-menu__link_2
-      &_2 {
-         ion-icon {
-            transform: rotate(-45deg);
-         }
-      }
-      // .circle-menu__link_3
-      &_3 {
-      }
-   }
-}
-.circle-menu-open {
-   .circle-menu__link {
-      z-index: 1;
-      top: 10px;
-      left: -75px;
-      transform-origin: 100px;
-      // .circle-menu__link_1
-      &_1 {
-         transform: rotate(calc(360deg / 8 * 8));
-         transition-delay: 0.1s;
-      }
-      // .circle-menu__link_2
-      &_2 {
-         transform: rotate(calc(360deg / 8 * 9));
-         transition-delay: 0.2s;
-      }
-      // .circle-menu__link_3
-      &_3 {
-         transform: rotate(calc(360deg / 8 * 10));
-         transition-delay: 0.3s;
-      }
-   }
-}
-.icon-circle-menu {
-   display: block;
-   position: relative;
-   width: rem(30);
-   height: rem(18);
-   z-index: 5;
-   @media (any-hover: none) {
-      cursor: default;
-   }
-   span,
-   &::before,
-   &::after {
-      content: '';
-      transition: all 0.3s ease 0s;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #fff;
-   }
-   &::before {
-      top: 0;
-   }
-   &::after {
-      bottom: 0;
-   }
-   span {
-      top: calc(50% - rem(1));
-   }
-   .menu-open & {
-      span {
-         width: 0;
-      }
-      &::before,
-      &::after {
-      }
-      &::before {
-         top: calc(50% - rem(1));
-         transform: rotate(-45deg);
-      }
-      &::after {
-         bottom: calc(50% - rem(1));
-         transform: rotate(45deg);
-      }
-   }
-}
-*/
 
 .slide-main {
   display: -webkit-box;
